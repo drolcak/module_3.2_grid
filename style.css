@@ -8,7 +8,7 @@
     margin: 0 auto;
 }
 
-.row::before, row::after {
+.row::before, .row::after {
     content: "";
     display: table;
     clear: both;
@@ -17,9 +17,11 @@
 [class*="col-"] {
     float: left;
     min-height: 1px;
-    padding: 5%;
+    padding: 10px;
+    border: 1px black solid;
 }
-/* columns*/
+
+/* -------------------------columns-------------------------*/
 .col-1 {
     width: 8.33%;
 }
@@ -68,7 +70,7 @@
     width: 100%;
 }
 
-/* offsets*/
+/* --------------------offsets-------------------------*/
 
 .col-offset-1 {
     margin-left: 8.33%;
@@ -116,4 +118,18 @@
 
 .col-offset-12 {
     margin-left: 100%;
+}
+/* --------------------footer-------------------------*/
+
+footer>div {
+    background-color: #000000;
+    color: #ffffff;
+    max-height: 20%;
+    text-align: center;
+    display: grid;
+    width: 100%;
+}
+
+footer {
+    position: sticky;
 }
